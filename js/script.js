@@ -4,8 +4,8 @@
 	
 	var showModal = function(event){
 		event.preventDefault();
-		//document.getElementById("modal").element.classList.remove("show");
-		//document.getElementById('#modal-one').classList.add('show');
+		document.getElementById("modal").element.classList.remove("show");
+		document.getElementById('#modal-one').classList.add('show');
 		document.getElementById('#modal-overlay').classList.add('show');
 	};
 	
