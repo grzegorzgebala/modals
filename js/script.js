@@ -4,9 +4,14 @@
 	
 	var showModal = function(event){
 		event.preventDefault();
-		document.getElementById("modal").element.classList.remove("show");
-		document.getElementById('#modal-one').classList.add('show');
-		document.getElementById('#modal-overlay').classList.add('show');
+		var a = document.getElementsByClassName("modal");
+
+		for (var i = 0; i < a.length; i++) {
+			a[i].classList.remove('show');
+		}
+
+		document.querySelector(event.target.getAttribute('href')).classList.add('show');
+		document.getElementById('modal-overlay').classList.add('show');
 	};
 	
 	var modalLinks = document.querySelectorAll('.show-modal');
